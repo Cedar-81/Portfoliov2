@@ -5,9 +5,9 @@ const Topnavmobile = () => {
   return (
     <div className='w-screen relative md:h-[4rem] bg-bck_color'>
       <div className='md:fixed md:w-full bg-bck_color md:z-20'>
-        <div className='w-screen hidden md:w-full md:flex justify-between items-center py-3 z-20 relative px-[5%]'>
+        <div className='w-screen md:w-full flex justify-between items-center py-3 z-20 relative px-[5%]'>
             <p className='text-xl font-bold'>Cedar<span className='text-orange'>.</span></p>
-            <div className='flex justify-between w-[30%]'>
+            <div className='md:flex hidden justify-between w-[30%]'>
               <Link to={'/'} className='text-base'>Home</Link>
               <a href={'/#about'} className='text-base'>About</a>
               <a href={'/#work'} className='text-base'>Works</a>
