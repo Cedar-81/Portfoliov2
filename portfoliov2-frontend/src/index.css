@@ -20,6 +20,11 @@
     background-image: url('/public/assets/project.jpg');
 }
 
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
 .blog_banner::before,
 .work_card::before {
     content: "";

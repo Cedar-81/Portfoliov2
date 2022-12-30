@@ -5,7 +5,7 @@ const Work = () => {
   return (
     <div id='work' className='px-[5%] pt-12 pb-8 md:px-[8%]'>
         <h3 className='text-xl font-medium md:text-2xl'>Works</h3>
-        <div className='flex flex-col md:flex-row md:flex-wrap gap-8 md:gap-8 mt-10 md:justify-between md:mt-[4rem]'>
+        <div className='flex flex-col md:flex-row md:flex-wrap gap-8 md:gap-8 md:justify-between mt-10 md:mt-[4rem]'>
           <Workcard />
           <Workcard />
           <Workcard />
