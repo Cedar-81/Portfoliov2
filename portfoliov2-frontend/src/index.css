@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.about_con {
+    background-image: url('/public/assets/abtbckimg.png');
+}
+
+.blog_banner {
+    background-image: url('/public/assets/blgbnr.jpg');
+}
+
+.work_card {
+    background-image: url('/public/assets/project.jpg');
+}
+
+.blog_banner::before,
+.work_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    /* color: #dcdcdc; */
+}
+
+.work_card::before {
+    border-radius: 1rem;
+}
+
+.blog_img {
+    background-image: url('/public/assets/blgimg.jpg');
+}
