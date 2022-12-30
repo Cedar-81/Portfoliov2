@@ -3,7 +3,7 @@ import React from 'react'
 const Technology = () => {
   return (
     <div className=' bg-blue px-4 flex flex-col items-center'>
-        <h4 className='mx-auto text-white text-center pt-3'>TECH STACK</h4>
+        {/* <h4 className='mx-auto text-white text-center pt-3'>TECH STACK</h4> */}
         <div className='flex pt-4 pb-1 gap-8 items-center overflow-x-auto'>
             <img className='h-10 ' src='/assets/csharp.svg' alt='' />
             <img className='h-9 ' src='/assets/react.svg' alt='' />
