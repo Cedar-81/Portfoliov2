@@ -5,7 +5,7 @@ const Topnavmobile = () => {
   return (
     <div className='w-screen relative md:h-[4rem] bg-bck_color'>
       <div className='md:fixed md:w-full bg-bck_color md:z-20'>
-        <div className='w-screen md:w-full flex justify-between items-center py-3 z-20 relative px-[5%]'>
+        <div className='w-screen md:hidden md:w-full flex justify-between items-center py-3 z-20 relative px-[5%]'>
             <p className='text-xl font-bold'>Cedar<span className='text-orange'>.</span></p>
             <div className='flex justify-between w-[30%]'>
               <Link to={'/'} className='text-base'>Home</Link>
@@ -15,7 +15,7 @@ const Topnavmobile = () => {
             </div>
             <button className='rounded-full px-5 py-2 bg-none border-2 font-medium text-white bg-orange'>Let's chat</button>
         </div>
-        <ul className='border-b-2 border-b-orange ml-[5%]' />
+        <ul className='border-b-2 md:hidden border-b-orange ml-[5%]' />
       </div>
     </div>
   )
