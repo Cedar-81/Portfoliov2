@@ -14,7 +14,7 @@ const App = () => {
             <Route path='/' element={<Home />} />
             <Route path='/blog' element={<Blog />} />
       </Routes>
-      <Navmobile />
+      <div className='md:hidden'><Navmobile /></div>
     </>
   )
 }

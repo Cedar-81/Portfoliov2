@@ -2,7 +2,7 @@ import React from 'react'
 
 const Blogcard = () => {
   return (
-    <div className='px-[5%] mt-6'>
+    <div className='px-[5%] md:px-0 max-w-[20rem] cursor-pointer mt-6'>
         <div className='blog_img bg-no-repeat bg-cover bg-center w-full h-[15em] rounded-2xl'></div>
         <div className='mt-7'>
             <h3 className='text-lg font-medium'>
