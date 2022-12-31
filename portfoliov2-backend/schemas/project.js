@@ -14,9 +14,9 @@ export default {
         title: 'Subitle'
     },
     {
-      name: 'slug',
+      name: 'url',
       type: 'string',
-      title: 'Slug'
+      title: 'Project Url'
     },
     {
       name: 'image',

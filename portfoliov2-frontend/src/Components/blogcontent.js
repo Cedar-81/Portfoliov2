@@ -13,15 +13,15 @@ const Blogcontent = () => {
   useEffect(() => {
     const query = blog_content_query(id)
     client.fetch(query)
-      .then((data) => setBlogcontent(data[0].content))
+      .then((data) => {setBlogcontent(data[0])})
       .catch(err => console.error(err))
     }, [])
-
+    
     return (
-    <div className='mb-[4rem]'>
-      <Blogdetbanner />
+    <div className='mb-[6rem]'>
+      <Blogdetbanner data={blogcontent} image={blogcontent?.image} />
       <div className='mt-[3rem] px-[5%] lg:mt-[8rem] lg:px-[20%]'>
-        <ReactMarkdown className='markdown' remarkPlugins={[gfm]} children={blogcontent} />
+        <ReactMarkdown className='markdown' remarkPlugins={[gfm]} children={blogcontent?.content} />
       </div>
     </div>
   )

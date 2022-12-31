@@ -24,21 +24,19 @@ const Work = () => {
       })
     }, [loadamt])
 
-    console.log(works)
-
     
   return (
     <div id='work' className='px-[5%] pt-12 pb-8 md:px-[8%]'>
         <h3 className='text-xl font-medium md:text-2xl'>Works</h3>
         <div className='flex flex-col md:flex-row md:flex-wrap gap-8 md:gap-8 md:justify-between mt-10 md:mt-[4rem]'>
           {
-            works?.map(work => <Workcard data={work} />)
+            works?.map(work => <Workcard key={work._id} data={work} />)
           }        
         </div>
 
         {works &&
           (  <div className='w-full flex justify-center mt-3 md:mt-10'>
-                <button onClick={() => setLoadamt(prev => prev + 3)} className='px-5 py-3 rounded-full border-2 border-orange text-orange md:px-8'>Load more</button>
+                <button onClick={() => setLoadamt(prev => prev + 3)} className='px-5 py-3 hover:bg-orange hover:text-white transition rounded-full border-2 border-orange text-orange md:px-8'>Load more</button>
             </div>)
         }
 

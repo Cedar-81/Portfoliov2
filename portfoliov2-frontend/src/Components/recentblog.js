@@ -24,14 +24,12 @@ const Recentblog = () => {
       .catch(err => console.error(err))
     }, [loadamt])
 
-    console.log(blogs)
-
   return (
     <div className='px-[5%] pb-8 md:px-[8%] md:mt-[6rem]'>
         <h1 className='text-xl mt-8 font-medium'>Recent blog posts</h1>
         <div className='flex flex-col gap-4 md:flex-row md:mt-[2rem] md:flex-wrap md:gap-10 md:justify-between'>
           {
-            blogs?.map(blog => <Blogcard data={blog} />)
+            blogs?.map(blog => <Blogcard key={blog?._id} data={blog} />)
           } 
         </div>
         {blogs && (
