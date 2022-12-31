@@ -15,7 +15,7 @@ const Blogdetbanner = ({data, image}) => {
                 {data?.summary}
             </p>
             <div className='flex mt-7 items-center'>
-                <img src='/assets/aboutimg-mobile.png' alt='' className='h-10 w-10 rounded-full' />
+                <img src='/assets/profile.jpg' alt='' className='h-10 w-10 rounded-full' />
                 <div className='ml-3'>
                     <p className='font-medium'>Cedar</p>
                     <p className='text-sm font-light'>Graphic Designer and Web developer</p>

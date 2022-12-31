@@ -13,7 +13,7 @@ const Topnavmobile = () => {
               <a href={'/#work'} className='text-base'>Works</a>
               <Link to={'/blog'} className='text-base'>Blog</Link>
             </div>
-            <button className='rounded-full px-5 py-2 bg-none border-2 font-medium text-white bg-orange'>Let's chat</button>
+            <a href='mailto: cedarwudnovels@gmail.com'><button className='rounded-full px-5 py-2 bg-none border-2 font-medium text-white bg-orange'>Let's chat</button></a>
         </div>
         <ul className='border-b-2 md:block hidden border-b-orange ml-[5%]' />
       </div>
