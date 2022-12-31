@@ -5,16 +5,15 @@ const Technology = () => {
     <div className=' bg-blue px-4 md:px-[8%] flex flex-col items-center'>
         {/* <h4 className='mx-auto text-white text-center pt-3'>TECH STACK</h4> */}
         <div className='flex pt-4 pb-1 gap-10 items-center overflow-x-auto md:overflow-hidden md:flex-wrap md:py-8 md:justify-evenly'>
-            <img className='h-10 md:h-[5rem]' src='/assets/csharp.svg' alt='' />
+            <img className='h-10 md:h-[4.5rem]' src='/assets/csharp.svg' alt='' />
             <img className='h-9 md:h-[4.5rem]' src='/assets/react.svg' alt='' />
             <img className='h-8 md:h-[4.2rem]' src='/assets/javascript.svg' alt='' />
             <img className='h-9 md:h-[4.5rem]' src='/assets/adobexd.svg' alt='' />
             <img className='h-10 md:h-[5rem]' src='/assets/css3.svg' alt='' />        
-            <img className='h-10 md:h-[5rem]' src='/assets/csharp.svg' alt='' />
-            <img className='h-9 md:h-[4.5rem]' src='/assets/react.svg' alt='' />
-            <img className='h-8 md:h-[4.2rem]' src='/assets/javascript.svg' alt='' />
-            <img className='h-9 md:h-[4.5rem]' src='/assets/adobexd.svg' alt='' />
-            <img className='h-10 md:h-[5rem]' src='/assets/css3.svg' alt='' />        
+            <img className='h-10 md:h-[5rem]' src='/assets/html.svg' alt='' />
+            <img className='h-9 md:h-[5rem]' src='/assets/photoshop.svg' alt='' />
+            <img className='h-8 md:h-[5rem]' src='/assets/adobeill.svg' alt='' />
+            <img className='h-9 md:h-[4.2rem]' src='/assets/figma.svg' alt='' />
         </div>
         <div className='flex md:hidden items-center pb-2 text-gray'>
             <img src='assets/arr.svg' alt='' className='h-4' />

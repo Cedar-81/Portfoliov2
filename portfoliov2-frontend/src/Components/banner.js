@@ -13,8 +13,8 @@ const Banner = () => {
                     Specialize in Web design and development.
                 </p>
                 <div className='flex mt-7 w-[75%] justify-between md:w-max'>
-                    <button className='rounded-full w-max px-7 py-2 text-base flex justify-center items-center text-white bg-orange font-medium'>Hire Me</button>
-                    <button className='rounded-full md:ml-10 w-max px-7 py-2 text-base flex justify-center items-center border-2 font-medium'>Projects</button>
+                    <a href='mailto: cedarwudnovels@gmail.com' target="_blank"><button className='rounded-full w-max px-7 py-2 text-base flex justify-center items-center text-white bg-orange font-medium'>Hire Me</button></a>
+                    <a href='' target="_blank"><button className='rounded-full md:ml-10 w-max px-7 py-2 text-base flex justify-center items-center border-2 font-medium'>Resume</button></a>
                 </div>            
             </div>
 

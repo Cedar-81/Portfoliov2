@@ -10,9 +10,9 @@ const About = () => {
                 I enjoy creating problem focused projects with user centric, delightful human experiences.
             </p>
             <div className='flex w-[65%] justify-between mt-[4rem] mb-8 md:w-[75%] md:mt-10 lg:w-[40%] lg:mt-[6rem]'>
-                <button className='px-7 py-3 rounded-full text-white bg-black md:px-9'>Contact</button>
-                <button className='w-11 flex justify-center items-center h-11 bg-white rounded-full'><img src='/assets/twitter.svg' alt='' className='w-5' /></button>
-                <button className='w-11 flex justify-center items-center h-11 bg-white rounded-full'><img src='/assets/linkedin.svg' alt='' className='w-5' /></button>
+                <a href='mailto: cedarwudnovels@gmail.com' target='_blank'><button className='px-7 py-3 rounded-full text-white bg-black md:px-9'>Contact</button></a>
+                <a href='https://twitter.com/C_edar_' target='_blank'><button className='w-11 flex justify-center items-center h-11 bg-white rounded-full'><img src='/assets/twitter.svg' alt='' className='w-5' /></button></a>
+                <a href='https://www.linkedin.com/in/ugwuanyi-divinewisdom-99294a1b2/' target='_blank'><button className='w-11 flex justify-center items-center h-11 bg-white rounded-full'><img src='/assets/linkedin.svg' alt='' className='w-5' /></button></a>
             </div>
         </div>
 
