@@ -4,7 +4,7 @@ import { urlFor } from '../client'
 
 const Blogdetbanner = ({data, image}) => {
 
-  return (
+    return (
     <div className='flex flex-col-reverse lg:flex-row lg:items-center'>
         <div className='px-[5%] mt-8'>
             <p className='text-sm font-medium'>{data?.datetime}. <span className=''>{data?.readtime}</span></p>

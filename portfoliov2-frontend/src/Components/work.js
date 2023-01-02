@@ -34,7 +34,7 @@ const Work = () => {
           }        
         </div>
 
-        {works &&
+        {works?.length > 3 &&
           (  <div className='w-full flex justify-center mt-3 md:mt-10'>
                 <button onClick={() => setLoadamt(prev => prev + 3)} className='px-5 py-3 hover:bg-orange hover:text-white transition rounded-full border-2 border-orange text-orange md:px-8'>Load more</button>
             </div>)

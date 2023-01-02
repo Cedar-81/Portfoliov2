@@ -1,28 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Blogcard from './blogcard'
-import { client } from '../client'
-import { blog_query } from '../utils/data'
+import useFetchBlog from '../hooks/useFetchBlog'
 
 const Recentblog = () => {
-  const [blogs, setBlogs] = useState(null)
-  const [loadamt, setLoadamt] = useState(3)
-
-  useEffect(() => {
-    const query = blog_query()
-    client.fetch(query)
-      .then(data => {
-        if(data.length > 0) {
-          let arr = []
-          let count = 0
-          data?.forEach(val => {
-            arr.push(val)
-            count++
-            if(count === loadamt || count == data.length) return setBlogs(arr)
-          });
-        }
-      })
-      .catch(err => console.error(err))
-    }, [loadamt])
+  const [blogs, loadmore] = useFetchBlog()
 
   return (
     <div className='px-[5%] pb-8 md:px-[8%] md:mt-[6rem]'>
@@ -32,9 +13,9 @@ const Recentblog = () => {
             blogs?.map(blog => <Blogcard key={blog?._id} data={blog} />)
           } 
         </div>
-        {blogs && (
+        {blogs?.length > 3 && (
           <div className='w-full flex justify-center mt-9'>
-              <button onClick={() => setLoadamt(prev => prev + 3)} className='px-5 py-3 rounded-full md:px-10 bg-black text-white'>Load more</button>
+              <button onClick={loadmore} className='px-5 py-3 rounded-full md:px-10 bg-black text-white'>Load more</button>
           </div>)
         }
     </div>
