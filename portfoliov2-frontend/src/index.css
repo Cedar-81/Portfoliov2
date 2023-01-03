@@ -29,6 +29,10 @@ body {
     all: revert;
 }
 
+.markdown a {
+    color: #FE481C;
+}
+
 .blog_banner::before,
 .work_card::before {
     content: "";

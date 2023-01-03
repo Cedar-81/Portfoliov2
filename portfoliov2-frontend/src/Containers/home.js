@@ -3,10 +3,19 @@ import Banner from '../Components/banner'
 import About from '../Components/about'
 import Work from '../Components/work'
 import Technology from '../Components/technology'
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
   return (
     <div className='bg-bck_color pb-[5rem]'>
+        <Helmet>
+          <title>Cedar - Web Developer and Graphic Designer</title>
+          <meta name="description" 
+            content="Hi, nice to meet you. 
+              I am a Freelance Web Developer and Graphic Designer.
+              Let's Chat." 
+          />
+        </Helmet>
         <Banner />
         <Technology />
         <About />

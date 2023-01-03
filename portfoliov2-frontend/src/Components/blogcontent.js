@@ -1,22 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Blogdetbanner from './blogdetbanner'
 import ReactMarkdown from 'react-markdown'
-import { client } from '../client'
-import { blog_content_query } from '../utils/data'
-import { useParams } from 'react-router-dom'
 import gfm from 'remark-gfm'
 import { ImSpinner } from 'react-icons/im'
 
-const Blogcontent = () => {
-  const [blogcontent, setBlogcontent] = useState(null)
-  const {id} = useParams()
-
-  useEffect(() => {
-    const query = blog_content_query(id)
-    client.fetch(query)
-      .then((data) => {setBlogcontent(data[0])})
-      .catch(err => console.error(err))
-    }, [])
+const Blogcontent = ({blogcontent}) => {
     
     return (
       <>

@@ -29,7 +29,7 @@ const Banner = () => {
                         <p className=''>cedarwudnovels@gmail.com</p>
                     </div>
                     <div className='flex flex-row-reverse pt-[3.5rem] pb-6 ml-8 lg:flex-row lg:pt-0 lg:pb-0 lg:items-start'>
-                        <img src='/assets/atom.svg' alt='' className='' />
+                        <img src='/assets/atom.svg' alt='an atom' />
                         <p className='text-right mr-2 lg:text-left lg:mr-0 md:w-[40%] lg:ml-2 lg:w-[80%]'>
                             UI/UX designer, Graphic Designer and Web developer.
                             Specialized in Web Development.
@@ -39,9 +39,9 @@ const Banner = () => {
             </div>
         </div>
 
-        <img src='/assets/bannerimg-mobile.png' alt='' className='mt-9 w-screen lg:hidden' />
+        <img src='/assets/bannerimg-mobile.png' alt='Cedar sitting on the ground with some icons floating around' className='mt-9 w-screen lg:hidden' />
         <div className='hidden h-full !basis-1/2 w-full lg:flex justify-end'>
-             <img src='/assets/bannerimg-desktop.png' alt='' className='h-full' />
+             <img src='/assets/bannerimg-desktop.png' alt='Cedar sitting on the ground with some icons floating around' className='h-full' />
         </div>
     </div>
   )

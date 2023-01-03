@@ -11,13 +11,13 @@ const About = () => {
             </p>
             <div className='flex w-[65%] justify-between mt-[4rem] mb-8 md:w-[75%] md:mt-10 lg:w-[40%] lg:mt-[6rem]'>
                 <a href='mailto: cedarwudnovels@gmail.com' target='_blank'><button className='px-7 py-3 rounded-full text-white bg-black md:px-9'>Contact</button></a>
-                <a href='https://twitter.com/C_edar_' target='_blank'><button className='w-11 flex justify-center items-center h-11 bg-white rounded-full'><img src='/assets/twitter.svg' alt='' className='w-5' /></button></a>
-                <a href='https://www.linkedin.com/in/ugwuanyi-divinewisdom-99294a1b2/' target='_blank'><button className='w-11 flex justify-center items-center h-11 bg-white rounded-full'><img src='/assets/linkedin.svg' alt='' className='w-5' /></button></a>
+                <a href='https://twitter.com/C_edar_' target='_blank'><button className='w-11 flex justify-center items-center h-11 bg-white rounded-full'><img src='/assets/twitter.svg' alt='twitter logo' className='w-5' /></button></a>
+                <a href='https://www.linkedin.com/in/ugwuanyi-divinewisdom-99294a1b2/' target='_blank'><button className='w-11 flex justify-center items-center h-11 bg-white rounded-full'><img src='/assets/linkedin.svg' alt='linkedin logo' className='w-5' /></button></a>
             </div>
         </div>
 
         <div className='md:flex-1 md:w-full '>
-          <img className='w-screen md:rounded-3xl md:w-auto' src='/assets/aboutimg-mobile.png' alt='' />
+          <img className='w-screen md:rounded-3xl md:w-auto' src='/assets/aboutimg-mobile.png' alt="Cedar's headshot smiling" />
         </div>
     </div>
   )
