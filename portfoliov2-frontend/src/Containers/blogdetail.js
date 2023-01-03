@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Blogcontent from '../Components/blogcontent'
-import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router-dom';
 import { blog_content_query } from '../utils/data';
 import { client, urlFor } from '../client';
+import SEO from '../Components/seo';
 
 const Blogdetail = () => {
 
@@ -17,18 +17,19 @@ const Blogdetail = () => {
       .catch(err => console.error(err))
     }, [])
 
-
   return (
     <div>
-      <Helmet>
-          <title>{`Cedar- Blog: ${blogcontent?.title}`} </title>
-          <meta name="description" 
-            content={`${blogcontent?.summary}`}
-          />
-          <meta property="og:title" content={`${blogcontent?.title}`} />
-          <meta property="og:description" content={`${blogcontent?.summary}`} />
-          {blogcontent && <meta property="og:image" content={`url(${urlFor(blogcontent?.image).url()})`} />}
-        </Helmet>
+      {blogcontent && 
+        <SEO 
+            name={"C_edar_"} 
+            title={`Cedar- Blog: ${blogcontent?.title}`} 
+            description={`${blogcontent?.summary}`}
+            type={`summary`}
+            imgurl={`url(${urlFor(blogcontent?.image).url()})`} 
+            imgalt={`${blogcontent?.imagealt}`}
+            url={`https://cedar.readate.org/${id}/${blogcontent?.slug}`}
+        />
+      }
       <Blogcontent blogcontent={blogcontent} />
     </div>
   )

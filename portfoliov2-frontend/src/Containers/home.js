@@ -3,25 +3,20 @@ import Banner from '../Components/banner'
 import About from '../Components/about'
 import Work from '../Components/work'
 import Technology from '../Components/technology'
-import { Helmet } from 'react-helmet';
+import SEO from '../Components/seo'
 
 const Home = () => {
   return (
     <div className='bg-bck_color pb-[5rem]'>
-        <Helmet>
-          <title>Cedar - Web Developer and Graphic Designer</title>
-          <meta name="description" 
-            content="Hi, nice to meet you. 
-              I am a Freelance Web Developer and Graphic Designer.
-              Let's Chat." 
+        <SEO 
+          name={"C_edar_"} 
+          title={`Cedar - Web Developer and Graphic Designer`} 
+          description={'Hi, nice to meet you. I am a Freelance Web Developer and Graphic Designer.Let\'s Chat.'} 
+          type={`summary`}
+          imgurl={'/assets/aboutimg-mobile.png'}
+          imgalt={'A handsome guy smiling ;)'}
+          url={'https://cedar.readate.org'}
           />
-          <meta name="keywords" content="backend web development, frontend web development, javascript
-            c#, react, nextjs, sanity, remote web developer, web application development, web developers near me,
-            ecommerce web developer, web designer, ui/ux designer,
-          " 
-          />
-
-        </Helmet>
         <Banner />
         <Technology />
         <About />
