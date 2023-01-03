@@ -15,6 +15,12 @@ const Home = () => {
               I am a Freelance Web Developer and Graphic Designer.
               Let's Chat." 
           />
+          <meta name="keywords" content="backend web development, frontend web development, javascript
+            c#, react, nextjs, sanity, remote web developer, web application development, web developers near me,
+            ecommerce web developer, web designer, ui/ux designer,
+          " 
+          />
+
         </Helmet>
         <Banner />
         <Technology />
