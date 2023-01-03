@@ -1,2 +1,3 @@
 https://cedar.readate.org/
 https://cedar.readate.org/blog
+https://cedar.readate.org/blog/bf21d748-03bb-47da-aab5-3be09a8534bd/coding-best-practices-part-1
