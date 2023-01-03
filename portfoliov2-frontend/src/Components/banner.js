@@ -14,7 +14,7 @@ const Banner = () => {
                 </h1>
                 <div className='flex mt-7 w-[75%] justify-between md:w-max'>
                     <a href='mailto: cedarwudnovels@gmail.com' target="_blank"><button className='rounded-full w-max px-7 py-2 text-base flex justify-center items-center text-white bg-orange font-medium'>Hire Me</button></a>
-                    <a href='https://drive.google.com/file/d/11m89yhb3hbJweiHB0WQeGm6133vXxUXO/view?usp=sharing' target="_blank"><button className='rounded-full md:ml-10 w-max px-7 py-2 text-base flex justify-center items-center border-2 font-medium'>Resume</button></a>
+                    <a href='https://docs.google.com/document/d/17UiuvD80S9IHcs3nKf6OyHEMoRAw2clDq5LJ9be7c18/edit?usp=sharing' target="_blank"><button className='rounded-full md:ml-10 w-max px-7 py-2 text-base flex justify-center items-center border-2 font-medium'>Resume</button></a>
                 </div>            
             </div>
 
