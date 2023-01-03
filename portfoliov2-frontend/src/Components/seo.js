@@ -18,7 +18,7 @@ const SEO = ({name, description, title, type, imgurl, imgalt, url}) => {
         { /* End Facebook tags */ }
 
         { /* Twitter tags */ }
-        <meta name="twitter:creator" content={name} />
+        <meta name="twitter:creator" content={`@${name}`} />
         <meta name="twitter:card" content={type} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />

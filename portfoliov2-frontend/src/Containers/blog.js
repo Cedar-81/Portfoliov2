@@ -11,7 +11,7 @@ const Blog = () => {
           title={`Cedar- Blogs`} 
           description={'I am a Freelance Web Developer and Graphic Designer. Love to read, here are some of my most curated thoughts. Hop on in'} 
           type={`summary`}
-          imgurl={'/assets/blogsimg.jpg'}
+          imgurl={process.env.PUBLIC_URL + '/assets/blogsimg.jpg'}
           imgalt={'A quirky image of a lit lightbulb wearing a hat that is in turn wearing some googles;)'}
           url={'https://cedar.readate.org'}
           />
