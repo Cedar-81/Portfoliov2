@@ -6,11 +6,10 @@ import Blog from './Containers/blog'
 import Navmobile from './Components/navmobile'
 import Topnavmobile from './Components/topnavmobile'
 import Blogdetail from './Containers/blogdetail'
-import { HelmetProvider } from 'react-helmet-async'
 
 const App = () => {
   return (
-    <HelmetProvider>
+    <>
       <Topnavmobile />
       <Routes>
             <Route path='/' element={<Home />} />
@@ -18,7 +17,7 @@ const App = () => {
             <Route path='/blog/:id/:slug' element={<Blogdetail />} />
       </Routes>
       <div className='md:hidden'><Navmobile /></div>
-    </HelmetProvider>
+    </>
   )
 }
 
