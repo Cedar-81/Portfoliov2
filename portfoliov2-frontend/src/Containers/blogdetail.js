@@ -24,8 +24,7 @@ const Blogdetail = () => {
             name={"C_edar_"} 
             title={`Cedar- Blog: ${blogcontent?.title}`} 
             description={`${blogcontent?.summary}`}
-            type={`summary`}
-            imgurl={`url(${urlFor(blogcontent?.image).url()})`} 
+            imgurl={urlFor(blogcontent?.image).url()}
             imgalt={`${blogcontent?.imagealt}`}
             url={`https://cedar.readate.org/${id}/${blogcontent?.slug}`}
         />

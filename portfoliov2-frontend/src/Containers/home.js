@@ -12,7 +12,6 @@ const Home = () => {
           name={"C_edar_"} 
           title={`Cedar - Web Developer and Graphic Designer`} 
           description={'Hi, nice to meet you. I am a Freelance Web Developer and Graphic Designer.Let\'s Chat.'} 
-          type={"summary_large_image"}
           imgurl={process.env.PUBLIC_URL + '/assets/aboutimg-mobile.png'}
           imgalt={'A handsome guy smiling ;)'}
           url={'https://cedar.readate.org'}
