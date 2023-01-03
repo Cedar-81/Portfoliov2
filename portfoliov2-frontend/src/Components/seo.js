@@ -22,9 +22,9 @@ const SEO = ({name, description, title, type, imgurl, imgalt, url}) => {
         <meta name="twitter:card" content={type} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:site" content={name} />
+        <meta name="twitter:site" content={`@${name}`} />
         <meta name="twitter:image" content={imgurl} />
-        <meta name="twitter:imagealt" content={imgalt} />
+        <meta name="twitter:image:alt" content={imgalt} />
         { /* End Twitter tags */ }
     </Helmet>
   )
