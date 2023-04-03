@@ -17,7 +17,7 @@ const About = () => {
         </div>
 
         <div className='md:flex-1 md:w-full '>
-          <img className='w-screen md:rounded-3xl md:w-auto' src='/assets/aboutimg-mobile.png' alt="Cedar's headshot smiling" />
+          <img className='w-screen md:rounded-3xl md:w-auto' src='/assets/aboutimg-mobile.jpg' alt="Cedar's headshot smiling" />
         </div>
     </div>
   )
