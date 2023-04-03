@@ -1,10 +1,10 @@
 export const project_query = () => {
-    const query = `*[_type == "project"]`
+    const query = `*[_type == "project" && !(_id in path("drafts.**"))] | order(_createdAt desc)]`
     return query
 }
 
 export const blog_query = () => {
-    const query = `*[_type == "blog"]`
+    const query = `*[_type == "blog" && !(_id in path("drafts.**"))] | order(_createdAt desc)]`
     return query
 }
 
