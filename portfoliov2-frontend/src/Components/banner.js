@@ -38,11 +38,6 @@ const Banner = () => {
                 </div>
             </div>
         </div>
-
-        <img src='/assets/bannerimg-mobile.png' alt='Cedar sitting on the ground with some icons floating around' className='mt-9 w-screen lg:hidden' />
-        <div className='hidden h-full !basis-1/2 w-full lg:flex justify-end'>
-             <img src='/assets/bannerimg-desktop.png' alt='Cedar sitting on the ground with some icons floating around' className='h-full' />
-        </div>
     </div>
   )
 }
