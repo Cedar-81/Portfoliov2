@@ -26,7 +26,7 @@ const Work = () => {
   return (
     <div id="work" className="px-[5%] pt-12 pb-8 md:px-[8%]">
       <h3 className="text-xl font-medium md:text-2xl">Works</h3>
-      <div className="flex flex-col md:flex-row md:flex-wrap gap-8 md:gap-8 md:justify-between mt-10 md:mt-[4rem]">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-8 md:justify-between mt-10 md:mt-[4rem]">
         {works?.map((work) => (
           <Workcard key={work._id} data={work} />
         ))}

@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { urlFor } from '../client'
+import { BsArrowUpLeft } from 'react-icons/bs'
+
 
 const Workcard = ({ data: {title, subtitle, image, url} }) => {
   const containerStyle = {
@@ -14,7 +16,7 @@ const Workcard = ({ data: {title, subtitle, image, url} }) => {
                   <h3 className='text-lg font-medium'>{title}</h3>
                   <p className='text-base text-gray w-[90%]'>{subtitle}</p>
               </div>
-              <button className='rounded-full p-2 bg-white opacity-90'><img className='h-6' src='/assets/arrow.svg' alt='' /></button>
+              <button className='rounded-full p-2 h-8 w-8 bg-white opacity-90'><BsArrowUpLeft className="h-4 w-4 text-orange rotate-90" /></button>
           </div>
       </div>
     </a>
