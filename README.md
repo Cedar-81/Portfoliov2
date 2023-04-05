@@ -21,7 +21,3 @@ Once the development server is running, you can use the portfolio to view my pro
 ## Live Website
 
 The live version of the PortfolioV2 can be accessed [here](https://cedar.readate.org/).
-
-## Contributing
-
-If you find any issues or have any suggestions for improving the portfolio, please create a new issue or pull request on the GitHub repository. Thank you for your contributions!
