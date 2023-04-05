@@ -4,7 +4,6 @@ const Banner = () => {
   return (
     <div className="lg:flex lg:max-w-screen lg:justify-between lg:min-h-screen">
       <div className="xl:mt-12 w-full">
-
         <div className="w-full lg:flex">
           <div className="w-screen lg:max-w-[50%] flex justify-center items-center flex-col px-[5%] lg:pl-[8%] pt-11 pb-9 lg:block">
             <h1 className="text-2xl xl:text-[3.7rem] font-semibold mx-auto leading-tight lg:mx-0 md:text-[3.3rem]">
@@ -33,17 +32,15 @@ const Banner = () => {
                 </button>
               </a>
             </div>
-
           </div>
 
-          <div className="w-full border-2">
-            <img className="" src="/assets/banner-img.png" />
+          <div className="w-full">
+            <img className=" mx-auto" src="/assets/banner-img.png" />
           </div>
         </div>
 
-        <div className="w-full flex">
+        <div className="w-full flex pb-8p">
           <div className="px-[5%] lg:pl-[8%] lg:max-w-[50%]">
-
             <div className="">
               <h3 className="text-lg font-medium">Hobbies</h3>
               <p className="">Writing, Singing</p>
