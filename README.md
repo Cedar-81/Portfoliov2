@@ -1,6 +1,6 @@
 # PortfolioV2
 
-Welcome to PortfolioV2! This repository contains two directories: `portfoliov2-backend` and `portfoliov2-frontend`. 
+Welcome to PortfolioV2! This repository contains two directories: `portfoliov2-backend` and `portfoliov2-frontend`. This is a version2 update to my portfolio website do well to check it out.
 
 `portfoliov2-backend` contains the Sanity CMS project that provides schemas and data models for the portfolio. `portfoliov2-frontend` contains the Next.js project that serves as the frontend for the portfolio. 
 
